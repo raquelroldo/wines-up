@@ -1,0 +1,24 @@
+<div class="item-wrapper" [routerLink]="['/wines']">
+  <div class="item-content-wrapper">
+    <h1 class="item-title">{{ wine.wineType }} wine {{ wine.wineName }}</h1>
+    <div class="image-wrapper">
+      <img src="{{ wine.wineImagePath }}" class="wine-image" alt="wine image">
+    </div>
+  </div>
+  <div class="item-content-wrapper">
+    <p>Id: <span>{{ wine.wineId }}</span></p>
+    <p>Region: <span>{{ wine.wineRegion }}</span></p>
+    <p>Rate: <span>{{ wine.wineRate }}</span></p>
+    <p>Year: <span>{{ wine.wineYear }}</span></p>
+    <p>Producer: <span>{{ wine.wineProducer }}</span></p>
+    <p>Quantity at home: <span>{{ wine.wineQuantity }} bottle/s</span></p>
+  </div>
+  <div class="item-content-wrapper">
+    <p>Alcohol: <span>{{ wine.wineAlcohol }}%</span></p>
+    <p>Grapes: <span>{{ wine.wineGrapes }}</span></p>
+    <p>Details: <span>{{ wine.wineDetails }}</span></p>
+    <p>Flavours: <span>{{ wine.wineFlavours }}</span></p>
+    <p>Consumption: <span>{{ wine.wineConsumption }}</span></p>
+    <p>Notes: <span>{{ wine.wineNotes }}</span></p>
+  </div>
+</div>

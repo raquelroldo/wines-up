@@ -1,0 +1,82 @@
+* {
+  font-family: 'Gayathri', sans-serif;
+}
+
+.item-wrapper {
+  max-width: 310px;
+  border: 1px solid #cecece;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.item-wrapper:hover {
+  box-shadow: 1px 2px 3px purple;
+}
+
+.item-content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.image-wrapper {
+  border-radius: 5px;
+  max-width: 130px;
+  max-height: 140px;
+  border: 1px solid #cecece;
+  border-radius: 5px;
+  box-shadow: 2px 3px 4px 0px;
+  overflow: hidden;
+}
+
+.wine-image {
+  width: 100%;
+  height: auto;
+}
+
+.item-text-wrapper {
+  padding: 5px;
+}
+
+.item-btn-wrapper {
+  text-align: center;
+}
+
+.link {
+  text-decoration: none;
+  color: #270127;
+}
+
+.btn-primary {
+  background-color: #460546;
+  border-color: #951cad;
+  font-weight: 700;
+  margin: 5px;
+}
+
+.btn-primary:hover {
+  background-color: #951cad;
+}
+
+.btn-primary:focus {
+  background-color: #951cad;
+  border-color: #951cad;
+  box-shadow: 0 0 0 0.2rem rgba(81, 20, 111, .5);
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus {
+  box-shadow: 0 0 0 0.2rem rgba(81, 20, 111, .5);
+}
+
+.btn-primary:not(:disabled):not(.disabled):active {
+  background-color: #951cad;
+  border-color: #951cad;
+}
+
+@media (min-width: 576px) {
+
+
+}

@@ -1,0 +1,12 @@
+.list-title  {
+  color: #460546;
+}
+
+.component-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  min-height: 180px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+

@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Gayathri&display=swap');
+
+* {
+  font-family: 'Gayathri', sans-serif;
+}
+
+.header-bg {
+  background-color: rgba(81, 20, 111, .8);
+  padding-top: 15px;
+  padding-left: 25px;
+}

@@ -1,0 +1,17 @@
+<div class="item-wrapper">
+  <a [routerLink]="['/wine', wine.wineId]"  class="link item-content">
+    <div class="image-wrapper">
+      <img src="{{ wine.wineImagePath }}" class="wine-image" alt="wine image">
+    </div>
+    <div class="item-text-wrapper">
+      <h4 class="item-title">{{ wine.wineType }} wine {{ wine.wineName }}</h4>
+      <p class="item-text">from {{ wine.wineRegion }}.</p>
+      <p class="item-text"> You have {{ wine.wineQuantity }} bottle/s at home.</p>
+    </div>
+  </a>
+  <div class="item-btn-wrapper">
+    <button [routerLink]="['/edit', wine.wineId]" type="button" class="btn btn-primary">Edit</button>
+    <button type="button" class="btn btn-primary" (click)="removeWine(currentIndex)">Delete</button>
+  </div>
+</div>
+

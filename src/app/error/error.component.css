@@ -1,0 +1,19 @@
+.component-wrapper {
+  font-family: 'Gayathri', sans-serif;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.link {
+  color: #460546;
+  margin: 25px;
+  text-decoration: none;
+}
+
+.media-wrapper {
+  max-width: 800px;
+}
+
+.image {
+  width: 100%;
+}

@@ -1,0 +1,77 @@
+* {
+  font-family: 'Gayathri', sans-serif;
+}
+
+.item-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  border: 1px solid #cecece;
+  border-radius: 5px;
+  margin: 15px;
+  padding: 10px;
+}
+
+.item-title {
+  color: #460546;
+  font-weight: 700;
+  font-size: 21px;
+  margin-bottom: 22px;
+}
+
+.item-content-wrapper p {
+  padding: 5px;
+  color: #460546;
+  font-weight: 800;
+}
+
+.item-content-wrapper span {
+  font-weight: 500;
+}
+
+.image-wrapper {
+  max-width: 260px;
+  border: 1px solid #cecece;
+  border-radius: 5px;
+  box-shadow: 2px 3px 4px 0px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.wine-image {
+  width: 100%;
+  height: auto;
+}
+
+.btn-primary {
+  background-color: #460546;
+  border-color: #951cad;
+  font-weight: 700;
+  margin: 5px;
+}
+
+.btn-primary:hover {
+  background-color: #951cad;
+}
+
+.btn-primary:focus {
+  background-color: #951cad;
+  border-color: #951cad;
+  box-shadow: 0 0 0 0.2rem rgba(81, 20, 111, .5);
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus {
+  box-shadow: 0 0 0 0.2rem rgba(81, 20, 111, .5);
+}
+
+.btn-primary:not(:disabled):not(.disabled):active {
+  background-color: #951cad;
+  border-color: #951cad;
+}
+
+@media (min-width: 850px) {
+  .item-wrapper {
+    margin: 15px auto;
+    max-width: 850px;
+  }
+}

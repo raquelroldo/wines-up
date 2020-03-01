@@ -1,0 +1,99 @@
+<div class="container rounded main-bg">
+    <form [formGroup]="wineForm" (ngSubmit)="addWine()">
+        <h2 class="form-title">Add here a Wine</h2>
+        <div class="row justify-content-around">
+          <div class="col-md-6 col-lg-12">
+            <div class="form-group">
+              <label for="wine-id">Id: </label>
+              <input id="wine-id" name="wine-id" class="form-control" type="number"
+              placeholder="Id wine" formControlName="wineId" />
+          </div>
+            <div class="form-group">
+                <label for="wine-name">The Name: </label>
+                <input id="wine-name" name="wine-name" class="form-control" type="text"
+                placeholder="Enter the name of the wine" autofocus="true" formControlName="wineName" />
+            </div>
+            <div class="form-group">
+                <label for="wine-type">The Type: </label>
+                <input id="wine-type" name="wine-type" class="form-control" type="text"
+                placeholder="Enter the type of the wine" formControlName="wineType" />
+            </div>
+            <div class="form-group">
+                <label for="wine-region">The Region: </label>
+                <input id="wine-region" name="wine-region" class="form-control" type="text"
+                placeholder="Region where the wine is produced"  formControlName="wineRegion" />
+            </div>
+            <div class="form-group">
+              <label for="wine-quantity">The Quantity: </label>
+              <input id="wine-quantity" name="wine-quantity" class="form-control" type="number"
+              placeholder="How bottles do you have?" formControlName="wineQuantity" />
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-12" *ngIf="show">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                    <label for="wine-rate">The Rate: </label>
+                    <input id="wine-rate" name="wine-rate" class="form-control" type="number"
+                    placeholder="How much do you like it (0 to 10)?" formControlName="wineRate" />
+                </div>
+                <div class="form-group">
+                    <label for="wine-year">The Year: </label>
+                    <input id="wine-year" name="wine-year" class="form-control" type="number"
+                    placeholder="Year when the wine was produced" formControlName="wineYear" />
+                </div>
+                <div class="form-group">
+                    <label for="wine-producer">The Producer: </label>
+                    <input id="wine-producer" name="wine-producer" class="form-control" type="text"
+                    placeholder="Who produced the wine" formControlName="wineProducer" />
+                </div>
+                <div class="form-group">
+                    <label for="wine-alcohol">The Alcohol: </label>
+                    <input id="wine-alcohol" name="wine-alcohol" class="form-control" type="number"
+                    placeholder="How much alcohol it has?" formControlName="wineAlcohol" />
+                </div>
+                <div class="form-group">
+                    <label for="wine-grapes">The Grapes: </label>
+                    <input id="wine-grapes" name="wine-grapes" class="form-control" type="text"
+                    placeholder="What grapes it has?" formControlName="wineGrapes" />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="wine-details">The Details: </label>
+                  <input id="wine-details" name="wine-details" class="form-control" type="text"
+                  placeholder="Would you like to add some details?" formControlName="wineDetails" />
+                </div>
+                <div class="form-group">
+                  <label for="wine-consump">The Consumption: </label>
+                  <input id="wine-consump" name="wine-consump" class="form-control" type="text"
+                  placeholder="It goes well with..." formControlName="wineConsumption" />
+                </div>
+                <div class="form-group">
+                  <label for="wine-flavours">The Flavours: </label>
+                  <input id="wine-flavours" name="wine-flavours" class="form-control" type="text"
+                  placeholder="Does it taste like chocolate or fruits?" formControlName="wineFlavours" />
+                </div>
+                <div class="form-group">
+                  <label for="wine-image">The Image: </label>
+                  <input id="wine-image" name="wine-image" class="form-control" type="url"
+                  placeholder="Add an image url to remember the wine" formControlName="wineImagePath" />
+                </div>
+                <div class="form-group">
+                  <label for="wine-notes">The Notes: </label>
+                  <input id="wine-notes" name="wine-notes" class="form-control" type="text"
+                  placeholder="Add a note to remember the moment" formControlName="wineNotes" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary btn-sm"> Save Wine</button>
+              <a class="link" (click)="toggleForm()">{{ linkName }}</a>
+            </div>
+          </div>
+        </div>
+    </form>
+</div>
+
