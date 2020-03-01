@@ -1,12 +1,14 @@
-# WinesUp [WIP]
+# Wines Up [WIP]
 
-This app is an academic project intend to practice and apply some Angular basic knowledge acquired in class. It is an app where you can add, edit and delete wines and information about.
+* Academic project intended to practice and apply Angular knowledge acquired in class. 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.22.
+* It is an app where you can List, add, edit and delete wines and information about it.
 
 ## Future Features
 
 Soon it will have a login form and share option.
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.22.
 
 ## Development server
 
